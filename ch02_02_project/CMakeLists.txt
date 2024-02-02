@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.28)
+#project(Singer CXX)
+project(Singer)
+include(singer/singer.cmake)
+message(${singer_source})
+add_executable(Singer main.cpp ${singer_source})
